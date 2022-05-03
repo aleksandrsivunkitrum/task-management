@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter as Router} from "react-router-dom";
 import { render } from "react-dom";
 import { Provider } from 'react-redux';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -14,9 +14,9 @@ render(
     <Provider store={store}>
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <BrowserRouter>
+            <Router>
                 <App />
-            </BrowserRouter>
+            </Router>
         </ThemeProvider>
     </Provider>
     ,
