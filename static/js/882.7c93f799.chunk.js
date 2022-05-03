@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktm_app=self.webpackChunktm_app||[]).push([[882],{1882:function(e,n,t){t.r(n);t(2791);var h=t(3504),r=t(184);n.default=function(){return(0,r.jsxs)("div",{children:[(0,r.jsx)("h2",{children:"Page not found"}),(0,r.jsx)("p",{children:(0,r.jsx)(h.rU,{to:"/",children:"Go to the home page"})})]})}}}]);
+//# sourceMappingURL=882.7c93f799.chunk.js.map
