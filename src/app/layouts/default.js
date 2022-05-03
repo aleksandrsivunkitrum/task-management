@@ -2,10 +2,15 @@ import React , {useState}from 'react';
 import { Outlet } from 'react-router-dom';
 import {Container, AppBar, Icon, Toolbar, Typography, Avatar, IconButton, Badge, Box} from "@mui/material";
 import { deepPurple } from '@mui/material/colors';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import {useSelector} from "react-redux";
 import UserForm from "../forms/user";
 import {getByProperty} from "../../store/commonSlice";
+
+const link = 'https://github.com/aleksandrsivunkitrum/task-management';
+
 function Layout() {
+
     const [open, setOpen] = useState(false);
     const username = useSelector((state) => getByProperty(state, 'username'))
 
@@ -26,6 +31,9 @@ function Layout() {
                         <Badge badgeContent={badge} color="error">
                             <Avatar sx={{ bgcolor: deepPurple[500] }}><Icon >person</Icon></Avatar>
                         </Badge>
+                    </IconButton>
+                    <IconButton target="_blank" href={link}>
+                        <Avatar sx={{ bgcolor: 'black' }}><GitHubIcon /></Avatar>
                     </IconButton>
                 </Toolbar>
             </AppBar>
